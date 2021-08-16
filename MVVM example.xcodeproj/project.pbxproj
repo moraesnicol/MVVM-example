@@ -13,6 +13,8 @@
 		C00254CE26C9B7D00032FF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00254CC26C9B7D00032FF56 /* Main.storyboard */; };
 		C00254D026C9B7D10032FF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00254CF26C9B7D10032FF56 /* Assets.xcassets */; };
 		C00254D326C9B7D10032FF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00254D126C9B7D10032FF56 /* LaunchScreen.storyboard */; };
+		C00254DB26C9E7780032FF56 /* Usermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00254DA26C9E7780032FF56 /* Usermodel.swift */; };
+		C00254DE26C9EA080032FF56 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00254DD26C9EA080032FF56 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C00254CF26C9B7D10032FF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C00254D226C9B7D10032FF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C00254D426C9B7D10032FF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00254DA26C9E7780032FF56 /* Usermodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usermodel.swift; sourceTree = "<group>"; };
+		C00254DD26C9EA080032FF56 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		C00254C526C9B7D00032FF56 /* MVVM example */ = {
 			isa = PBXGroup;
 			children = (
+				C00254DC26C9E7830032FF56 /* Model */,
+				C00254E026C9F4F40032FF56 /* View */,
+				C00254DF26C9EA180032FF56 /* ViewModel */,
 				C00254C626C9B7D00032FF56 /* AppDelegate.swift */,
 				C00254C826C9B7D00032FF56 /* SceneDelegate.swift */,
-				C00254CA26C9B7D00032FF56 /* ViewController.swift */,
 				C00254CC26C9B7D00032FF56 /* Main.storyboard */,
 				C00254CF26C9B7D10032FF56 /* Assets.xcassets */,
 				C00254D126C9B7D10032FF56 /* LaunchScreen.storyboard */,
 				C00254D426C9B7D10032FF56 /* Info.plist */,
 			);
 			path = "MVVM example";
+			sourceTree = "<group>";
+		};
+		C00254DC26C9E7830032FF56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C00254DA26C9E7780032FF56 /* Usermodel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C00254DF26C9EA180032FF56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C00254DD26C9EA080032FF56 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C00254E026C9F4F40032FF56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C00254CA26C9B7D00032FF56 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00254CB26C9B7D00032FF56 /* ViewController.swift in Sources */,
+				C00254DE26C9EA080032FF56 /* AuthenticationViewModel.swift in Sources */,
 				C00254C726C9B7D00032FF56 /* AppDelegate.swift in Sources */,
+				C00254DB26C9E7780032FF56 /* Usermodel.swift in Sources */,
 				C00254C926C9B7D00032FF56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
